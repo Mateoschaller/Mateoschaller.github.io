@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+.contenedorG{
+    width: 100%;
+    display: block;
+    background-image: url(fondo.jpg);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    width: auto;
+    height: 50px;
+    padding: 0px;
+    background: red;
+}
+.listamenu{
+    display: flex ;
+}
+.lista{
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    font-size: 20px;
+    font-family: consolas;
+}
+.lista:hover{
+    background: rgb(238, 84, 84);
+}
+.titulo{
+    display: block;
+    font-size:30px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+h1{
+    letter-spacing: 1px;
+    color: black;
+    font-family: Roboto,sans-serif,Arial,Helvetica;
+}
+.info{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background:  rgb(19, 88, 19);
+}
+b{
+    font-size: 20px;
+    color: black;
+}
+.imgequipo{
+     margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 350px; 
+    height: 200px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+p{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin: 5px;
+    font-size: 20px;
+    color: black;
+}
+.imglogo{
+    width: 200px;
+}
+h2{
+    font-size:30px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    color: black;
+    font-family: Roboto,sans-serif,Arial,Helvetica;
+}
+.liga{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background:  rgb(19, 88, 19);
+}
+.titulosimg{
+    width: 25%;
+    height: 150px;
+}
+h3{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+.flex{
+    padding-top: 15px;
+    display: flex;
+    margin-left: 30px;
+    padding-bottom: 15px;
+}
+.cantidad{
+    width: 75%;
+    text-align: center;
+}
+.pc{
+    font-size: 30px;
+    padding: 0px;
+}
+.p{
+    padding: 5px;
+}
+.infoestadio{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(19, 88, 19);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imgstadio{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background:  rgb(19, 88, 19);
+    margin-left: auto;
+    margin-right: auto;
+}
+.fotoestadio{
+    width: 50%;
+    border: 10px solid  rgb(19, 88, 19);
+}
