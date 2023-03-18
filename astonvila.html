@@ -7,34 +7,104 @@
      <meta name="author" content="Mateo schaller" />
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <link rel="stylesheet" type="text/css" href="equipos.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     </head>
     <body>
         <div class="contenedorG">
             <div class="menu">
-                <nav class="nav">
-                    <ul class="listamenu">
-                        <li class="lista">
-                            <a href="index.html">
-                                Inicio
-                            </a>    
-                        </li>
-                        <li class="lista">
-                            <a href="inglaterra.html">
-                                Inglaterra
-                            </a>
-                        </li>
-                        <li class="lista">
-                            <a href="#titulos">
-                                Titulos
-                            </a>
-                        </li>
-                        <li class="lista">
-                            <a href="#estadio">
-                                Estadio
-                            </a>
-                        </li>
-                    </ul>
+                <nav class="navbar">
+      <button onclick="toggleMenu()" class="burger"></button>
+      <div class="dropdowns">
+        <div class="dropdown">
+          <button>
+            Inicio
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <div>
+                <h2>Europa</h2>
+              <button class="ingl">Inglaterra</button>
+              <button class="alem">Alemania</button>
+              <button class="espa">España</button>
+              <button class="ital">Italia</button>
+              <button class="fran">Francia</button>
+              
+            </div>
+            <div>
+              <h2>America</h2>
+              <button class="arge">Argentina</button>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>
+            Competencias
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <div>
+              <h2>Ligas</h2>
+              <button class="pre">Premier League</button>
+              <button class="sky">SKY By Championship</button>
+            </div>
+            <div>
+              <h2>Copas</h2>
+              <button class="fa">Fa Cup</button>
+              <button class="cs">Community Shield</button>
+              <button class="cc">Carabao Cup</button>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>
+            Clubes
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <div>
+              <button class="ars">Arsenal</button>
+              <button class="ast">Aston Villa</button>
+              <button class="bou">Bournemounth</button>
+              <button class="bre">Brentford</button>
+              <button class="bri">Brighton</button>
+           </div>
+           <div>
+              <button class="che">Chelsea</button>
+              <button class="cry">Crystal Palace</button>
+              <button class="eve">Everton</button>
+              <button class="ful">Fulham</button>
+              <button class="lee">Leeds United</button>
+           </div>
+           <div>
+              <button class="lei">Leicester City</button>
+              <button class="liv">Liverpool</button>
+              <button class="city">Manchester City</button>
+              <button class="manc">Manchester United</button>
+              <button class="news">Newcastle</button>
+            </div>
+            <div>
+              <button class="not">Nottingham Forest</button>
+              <button class="sou">Southampton</button>
+              <button class="tt">Tottenham</button>
+              <button class="west">West Ham</button>
+              <button class="wolv">Wolverhampton</button>
+            </div>
+          </div>
+        </div>
+      </div>
                 </nav>
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
             </div>
             <div class="titulo">
                 <h1>ASTON VILLA</h1>
@@ -48,7 +118,7 @@
                 <p><b>Estadio: </b>Estadio Villa Park</p>
             </div>
             <div class="titulos" id="titulos">
-                <h2>TITULOS</h2>
+                <h2 class="ttt">TITULOS</h2>
                 <div class="liga">
                     <div class="flex">
                     <img class="titulosimg" src="premier.png">
@@ -121,7 +191,7 @@
                 </div>
             </div>    
             <div class="stadio" id="estadio">
-                <h2>ESTADIO</h2>
+                <h2 class="ttt">ESTADIO</h2>
                 <div class="infoestadio">
                      <p><b>Nombre: </b>Estadio Villa Park</p>
                      <p><b>Fundacion: </b>1897</p>
@@ -134,5 +204,6 @@
                 </div>
             </div>
         </div>
+        <script src="inglaterra.js"></script>
     </body>
 </html>    
