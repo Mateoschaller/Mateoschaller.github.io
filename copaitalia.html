@@ -7,34 +7,91 @@
      <meta name="author" content="Mateo schaller" />
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <link rel="stylesheet" type="text/css" href="ligaycopa.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     </head>
     <body>
         <div class="contenedorG">
             <div class="menu">
-                <nav class="nav">
-                    <ul class="listamenu">
-                        <li class="lista">
-                            <a href="index.html">
-                                Inicio
-                            </a>    
-                        </li>
-                        <li class="lista">
-                            <a href="italia.html">
-                                Italia
-                            </a>
-                        </li>
-                        <li class="lista">
-                            <a href="#ranking">
-                                Ranking
-                            </a>
-                        </li>
-                        <li class="lista">
-                            <a href="#tlg">
-                                Ganadores
-                            </a>
-                        </li>
-                    </ul>
+                <nav class="navbar">
+      <button onclick="toggleMenu()" class="burger"></button>
+      <div class="dropdowns">
+        <div class="dropdown">
+          <button>
+            Inicio
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <div>
+                <h2>Europa</h2>
+              <button class="ingl">Inglaterra</button>
+              <button class="alem">Alemania</button>
+              <button class="espa">España</button>
+              <button class="ital">Italia</button>
+              <button class="fran">Francia</button>
+              
+            </div>
+            <div>
+              <h2>America</h2>
+              <button class="arge">Argentina</button>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>
+            Paises
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <div>
+              <button class="ingl2">Inglaterra</button>
+              <button class="alem2">Alemania</button>
+              <button class="espa2">España</button>
+              <button class="arge2">Argentina</button>
+              <button class="fran2">Francia</button>
+              <button class="ital2">Italia</button>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>
+            Copas
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <div>
+                <h2>Mundiales</h2>
+              <button class="ci">Copa Intercontinental</button>
+              <button class="mdc">Mundial de Clubes</button>
+            </div>
+            <div>
+                <h2>Europa</h2>
+              <button class="ucl">UEFA Champions League</button>
+              <button class="uel">UEFA Europa League</button>
+              <button class="uco">UEFA Conferencia League</button>
+              <button class="rde">Recopa De Europa</button>
+              <button class="su">Supercopa UEFA</button>
+            </div>
+            <div>
+                <h2>America</h2>
+              <button class="">Copa Conmebol Libertadores</button>
+              <button class="">Conmebol Sudamericana</button>
+            </div>
+          </div>
+        </div>
+      </div>
                 </nav>
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
             </div>
             <div id="titulo">
                 COPPA ITALIA
@@ -427,5 +484,6 @@
                 </table>
             </div>
         </div>
+        <script src="javascrpt.js"></script>
     </body>
 </html>
