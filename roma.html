@@ -7,34 +7,103 @@
      <meta name="author" content="Mateo schaller" />
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <link rel="stylesheet" type="text/css" href="equipos.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     </head>
     <body>
         <div class="contenedorG">
             <div class="menu">
-                <nav class="nav">
-                    <ul class="listamenu">
-                        <li class="lista">
-                            <a href="index.html">
-                                Inicio
-                            </a>    
-                        </li>
-                        <li class="lista">
-                            <a href="italia.html">
-                                Italia
-                            </a>
-                        </li>
-                        <li class="lista">
-                            <a href="#titulos">
-                                Titulos
-                            </a>
-                        </li>
-                        <li class="lista">
-                            <a href="#estadio">
-                                Estadio
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+              <nav class="navbar">
+      <button onclick="toggleMenu()" class="burger"></button>
+      <div class="dropdowns">
+        <div class="dropdown">
+          <button>
+            Inicio
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <div>
+                <h2>Europa</h2>
+              <button class="ingl">Inglaterra</button>
+              <button class="alem">Alemania</button>
+              <button class="espa">España</button>
+              <button class="ital">Italia</button>
+              <button class="fran">Francia</button>
+              
+            </div>
+            <div>
+              <h2>America</h2>
+              <button class="arge">Argentina</button>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>
+            Competiciones
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <div>
+              <h2>Ligas</h2>
+              <button class="sa">Serie A</button>
+              <button class="sb">Serie B</button>
+            </div>
+            <div>
+              <h2>Copas</h2>
+              <button class="ci">Coppa Italia</button>
+              <button class="si">Superecoppa Italiana</button>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>
+            Clubes
+            <img src="chevron.svg" />
+          </button>
+          <div class="dropdown-menu">
+            <div>
+              <button class="ata">Atalanta</button>
+              <button class="bol">Bologna </button>
+              <button class="cre">Cremonese</button>
+              <button class="emp">Empoli</button>
+              <button class="fio">Fiorentina</button>
+           </div>
+           <div>
+              <button class="hel">Hellas Verona</button>
+              <button class="int">Inter </button>
+              <button class="juv">Juventus</button>
+              <button class="laz">Lazio</button>
+              <button class="lec">Lecce</button>
+           </div>
+           <div>
+              <button class="mil">Milan </button>
+              <button class="mon">Monza</button>
+              <button class="nap">Napoli </button>
+              <button class="rom">Roma</button>
+              <button class="sal">Salernitana</button>
+            </div>
+            <div>
+              <button class="sam">Sampdoria </button>
+              <button class="sas">Sassuolo</button>
+              <button class="spe">Spezia</button>
+              <button class="tor">Torino </button>
+              <button class="udi">Udinese</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                 </nav>
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
             </div>
             <div class="titulo">
                 <h1>Roma</h1>
@@ -48,7 +117,7 @@
                 <p><b>Estadio: </b>Estadio Olímpico de Roma</p>
             </div>
             <div class="titulos" id="titulos">
-                <h2>TITULOS</h2>
+                <h2 class="ttt">TITULOS</h2>
                 <div class="liga">
                     <div class="flex">
                     <img class="titulosimg" src="serieA.png">
@@ -101,7 +170,7 @@
                 </div>
             </div>    
             <div class="stadio" id="estadio">
-                <h2>ESTADIO</h2>
+                <h2 class="ttt">ESTADIO</h2>
                 <div class="infoestadio">
                      <p><b>Nombre: </b>Estadio Olímpico de Roma</p>
                      <p><b>Fundacion: </b>1953</p>
@@ -114,5 +183,6 @@
                 </div>
             </div>
         </div>
+        <script src="italia.js"></script>
     </body>
 </html>
